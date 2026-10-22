@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal Akademik STTI NIIT I-Tech</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome untuk Ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>STTI NIIT I-Tech</span>
+        </div>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="#" class="active">Beranda</a>
+          <a href="#">Profil</a>
+          <a href="#">Program Studi</a>
+          <a href="#">Informasi</a>
+          <a href="#">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h2>Selamat Datang di<br />STTI NIIT I-Tech</h2>
+          <p>
+            Membangun masa depan dengan teknologi<br />dan pendidikan
+            berkualitas.
+          </p>
+          <a class="button" href="#">Jelajahi Program Studi &rarr;</a>
+        </div>
+        <div class="hero-right"></div>
+      </section>
+
+      <!-- Bagian Tentang & Program Studi (Cards) -->
+      <section class="container section-padding info-section">
+        <div class="about-content">
+          <h3>Tentang Kami</h3>
+          <p>
+            STTI NIIT I-Tech adalah perguruan tinggi yang berfokus pada
+            pengembangan teknologi informasi dan komunikasi untuk menghasilkan
+            lulusan yang kompeten dan siap bersaing di dunia kerja.
+          </p>
+          <p>
+            Dengan kurikulum yang relevan dan didukung oleh dosen profesional,
+            kami berkomitmen untuk memberikan pendidikan terbaik bagi setiap
+            mahasiswa.
+          </p>
+          <p>
+            Bergabunglah bersama kami dan jadilah bagian dari generasi inovatif
+            yang siap menghadapi tantangan era digital.
+          </p>
+        </div>
+
+        <div class="cards-wrapper">
+          <article class="card">
+            <div class="card-icon blue-icon">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <h3>Program Studi Unggulan</h3>
+            <p>
+              Kami menawarkan program studi yang relevan dengan kebutuhan
+              industri, seperti Sistem Informasi, Teknik Informatika, dan bidang
+              teknologi lainnya.
+            </p>
+            <a class="button-outline" href="#">Lihat Program Studi &rarr;</a>
+          </article>
+          <article class="card">
+            <div class="card-icon green-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Fasilitas Lengkap</h3>
+            <p>
+              Didukung oleh laboratorium modern, akses internet cepat, dan
+              lingkungan belajar yang nyaman untuk mendukung proses
+              pembelajaran.
+            </p>
+            <a class="button-outline" href="#">Lihat Fasilitas &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Bagian Tabel & Form -->
+      <section class="bottom-section">
+        <div class="container bottom-grid">
+          <!-- Tabel Akademik -->
+          <div class="data-container box-white">
+            <div class="section-title">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h3>Data Mahasiswa dan Nilai Akademik</h3>
+                <p class="subtitle">
+                  Berikut adalah data nilai mahasiswa program studi Sistem
+                  Informasi & Teknik Informatika.
+                </p>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No</th>
+                   <th>NIM</th>
+                   <th>Nama Mahasiswa</th>
+                   <th>Program Studi</th>
+                    <th>Nilai Akhir</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                    <td>1</td>
+                   <td>2024001</td>
+                   <td>Andi Pratama</td>
+                   <td>Sistem Informasi</td>
+                   <td>85</td>
+                 </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2024002</td>
+                    <td>Siti Rahma</td>
+                   <td>Sistem Informasi</td>
+                    <td>92</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                   <td>2024003</td>
+                   <td>Budi Susanto</td>
+                    <td>Teknik Informatika</td>
+                    <td>78</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>2024004</td>
+                    <td>Dina Putri</td>
+                    <td>Teknik Informatika</td>
+                    <td>88</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>2024005</td>
+                    <td>Rizky Maulana</td>
+                    <td>Sistem Informasi</td>
+                    <td>90</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Form Pendaftaran -->
+          <div class="form-container box-white">
+            <div class="section-title">
+              <i class="fa-solid fa-user-pen"></i>
+              <div>
+                <h3>Formulir Pendaftaran Mahasiswa</h3>
+                <p class="subtitle">
+                  Isi data diri Anda untuk melakukan pendaftaran.
+                </p>
+              </div>
+            </div>
+
+            <form action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nama">Nama Lengkap *</label>
+                  <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nim">NIM *</label>
+                  <input
+                    type="text"
+                    id="nim"
+                    placeholder="Masukkan NIM"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="prodi">Program Studi *</label>
+                  <select id="prodi" required>
+                    <option value="">-- Pilih Program Studi --</option>
+                    <option value="si">Sistem Informasi</option>
+                    <option value="ti">Teknik Informatika</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Masukkan email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pesan">Pesan / Keterangan</label>
+                <textarea
+                  id="pesan"
+                  rows="3"
+                  placeholder="Tulis pesan atau keterangan tambahan..."
+                ></textarea>
+              </div>
+              <button type="submit" class="button btn-full">
+                <i class="fa-solid fa-paper-plane"></i> Kirim Pendaftaran
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <i class="fa-solid fa-graduation-cap"></i> STTI NIIT I-Tech
+        </div>
+        <div class="footer-address">
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Jl. Asem II No. 22, Jakarta
+            Selatan.
+          </p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 STTI NIIT I-Tech. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

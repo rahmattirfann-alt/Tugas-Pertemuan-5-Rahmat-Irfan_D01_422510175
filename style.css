@@ -1,0 +1,438 @@
+/* Reset Global & Typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  background-color: #ffffff;
+}
+
+h2,
+h3 {
+  color: #1a365d;
+  margin-top: 0;
+}
+
+/* Container Global */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
+
+/* Header & Navigasi */
+.site-header {
+  background-color: #1a365d;
+  color: white;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* TUGAS 5: Membantu elemen turun jika layar mengecil */
+  gap: 15px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* TUGAS 5: Ditambahkan agar menu navigasi fleksibel */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.main-nav a {
+  display: inline-block;
+  /* margin-left: 25px; (dihapus karena sudah pakai gap di .main-nav) */
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a.active,
+.main-nav a:hover,
+.main-nav a:focus {
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  height: 400px;
+  background-color: #4b8de3;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
+  z-index: 2;
+}
+
+.hero-left h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-left p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #e2e8f0;
+}
+
+.hero-right {
+  flex: 1.2;
+  background-image: url("Images_Gedung.jpg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  mask-image: linear-gradient(to right, transparent 0%, black 35%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  font-weight: 600;
+  width: max-content;
+  transition: 0.3s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: white;
+  color: #2b6cb0;
+}
+
+.button-outline {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  color: #4a5568;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.button-outline:hover {
+  border-color: #3182ce;
+  color: #3182ce;
+}
+
+/* Tentang Kami & Cards */
+.info-section {
+  display: flex;
+  gap: 40px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h3 {
+  font-size: 22px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* TUGAS 5: Diubah dari Flexbox menjadi CSS Grid */
+.cards-wrapper {
+  flex: 1.2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 25px 20px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  position: relative;
+  border-top: 3px solid transparent;
+}
+
+.card:first-child {
+  border-top-color: #3182ce;
+}
+.card:last-child {
+  border-top-color: #38a169;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.blue-icon {
+  background-color: #ebf8ff;
+  color: #3182ce;
+}
+.green-icon {
+  background-color: #f0fff4;
+  color: #38a169;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 13px;
+  color: #718096;
+}
+
+/* Bottom Section (Table & Form) */
+.bottom-section {
+  background-color: #f7fafc;
+  padding: 50px 0;
+}
+
+.bottom-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.box-white {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  min-width: 0; /* TUGAS 5: Mencegah flex-item meluap karena tabel */
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title i {
+  font-size: 24px;
+  color: #2b4b72;
+}
+
+.section-title h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #718096;
+}
+
+/* TUGAS 5: Pengaturan Tabel Responsif (bisa di-scroll) */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px; /* TUGAS 5: Menjamin tabel tidak bertumpuk di HP */
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background-color: #2b4b72;
+  color: white;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+tbody tr:hover {
+  background-color: #edf2f7;
+}
+
+/* Form Style */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #4a5568;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  background-color: #f8fafc;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3182ce;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.btn-full {
+  width: 100%;
+  background-color: #3182ce;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.btn-full:hover,
+.btn-full:focus {
+  background-color: #2b6cb0;
+  color: white;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #1a365d;
+  color: #cbd5e1;
+  padding: 20px 0;
+  font-size: 13px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* TUGAS 5: Mencegah error di layar kecil */
+  gap: 15px;
+}
+
+.footer-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.social-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+/* =========================================
+   TUGAS 5: RESPONSIVE WEB DESIGN (MEDIA QUERIES)
+   ========================================= */
+
+/* Untuk Tablet dan Layar Medium (Max Width: 992px) */
+@media screen and (max-width: 992px) {
+  .info-section,
+  .bottom-grid {
+    flex-direction: column;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-right {
+    display: none;
+  }
+  .hero-left {
+    padding: 60px 20px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Untuk HP dan Layar Kecil (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nav {
+    justify-content: center;
+    width: 100%;
+  }
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
